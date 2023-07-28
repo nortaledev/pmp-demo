@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--  Meta Name : START -->
+    <meta name="author" content="Nortale PMP - Let's start manage your project!" />
+    <meta name="title" content="Nortale PMP - Let's start manage your project!" />
+    <meta name="description" content="Description about nortale here..." />
+    <meta name="keywords" content="law, consultation" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!--  Meta Name : END -->
+
+    <!--  Open Graph Protocol : START -->
+    <meta property="og:title" content="Nortale PMP - Let's start manage your project!" />
+    <meta property="og:description" content="Description about nortale here..." />
+    <meta property="og:image" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="site_name" />
+    <meta property="og:url" content="" />
+    <!--  Open Graph Protocol : END -->
+
+    <!--  Robots : START -->
+    <meta name="robots" content="noindex, nofollow" />
+    <!--  Robots : END -->
+
+    <!--  Favicon Link : START -->
+    <link href="media/favicon.ico" rel="shortcut icon" type="image/ico" />
+    <!--  Favicon Link : END -->
+
+    <!--  CSS Source : START -->
+    <link rel="stylesheet" href="vendors/datatables.net-bs5/css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="vendors/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendors/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="vendors/tiny-slider/tiny-slider.css" />
+    <link rel="stylesheet" href="vendors/quill/quill.snow.css" />
+    <link rel="stylesheet" href="vendors/filepond/filepond.min.css" />
+    <link rel="stylesheet" href="vendors/filepond-plugin-image-preview/filepond-plugin-image-preview.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <!--  CSS Source : END -->
+
+    <!-- Google Font : START -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Google Font : END -->
+
+
+    <!--  Website Title : START -->
+    <title>Preload - Nortale PMP | Project Management Professional</title>
+    <!--  Website Title : END -->
+
+    <!--  Canonial : START -->
+    <link rel="canonical" href="https://nortale-pmp-demo.netlify.app/preload.html" />
+    <!--  Canonial : END -->
+</head>
+
+<body class="preload">
+    <div class="preload-item">
+        <div class="image-arrangement">
+            <img class="people" src="media/svg/people.svg" alt="people.svg">
+            <img class="lamp" src="media/svg/lamp.svg" alt="lamp.svg">
+            <img class="gear" src="media/svg/gear-group.svg" alt="gear-group.svg">
+            <img class="paper-1" src="media/svg/paper-1.svg" alt="paper-1.svg">
+            <img class="paper-2" src="media/svg/paper-2.svg" alt="paper-2.svg">
+        </div>
+        <div class="preload-text">
+            <h1>Please wait</h1>
+            <div class="dot-wrapper">
+                <div class="dots dot1"> </div>
+                <div class="dots dot2"></div>
+                <div class="dots dot3"></div>
+            </div>
+        </div>
+        <p>We are adding your task to the list </p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const singleElement = document.querySelector(".preload-item")
+            const preload = document.querySelector(".preload")
+            const orientation = screen.orientation.type;
+
+            const checkViewport = () => {
+                if (singleElement.scrollHeight >= window.innerHeight) {
+                    preload.style.margin = "60px 0"
+                    preload.style.height = "auto"
+                }
+            }
+
+            checkViewport()
+
+            if (window.matchMedia("(orientation: portrait)").matches) {
+                checkViewport()
+            }
+
+            if (window.matchMedia("(orientation: landscape)").matches) {
+                checkViewport()
+            }
+
+            if (orientation === "portrait-secondary" || orientation === "portrait-primary") {
+                checkViewport()
+            }
+
+            if (orientation === "landscape-primary") {
+                checkViewport()
+            }
+        })
+    </script>
+</body>
+
+</html>

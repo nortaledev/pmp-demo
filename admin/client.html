@@ -1,0 +1,2618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  Meta Name : START -->
+    <meta name="author" content="Nortale PMP - Let's start manage your project!" />
+    <meta name="title" content="Nortale PMP - Let's start manage your project!" />
+    <meta name="description" content="Description about nortale here..." />
+    <meta name="keywords" content="law, consultation" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!--  Meta Name : END -->
+
+    <!--  Open Graph Protocol : START -->
+    <meta property="og:title" content="Nortale PMP - Let's start manage your project!" />
+    <meta property="og:description" content="Description about nortale here..." />
+    <meta property="og:image" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="site_name" />
+    <meta property="og:url" content="" />
+    <!--  Open Graph Protocol : END -->
+
+    <!--  Robots : START -->
+    <meta name="robots" content="noindex, nofollow">
+    <!--  Robots : END -->
+
+    <!--  Favicon Link : START -->
+    <link href="../media/favicon.ico" rel="shortcut icon" type="image/ico" />
+    <!--  Favicon Link : END -->
+
+    <!--  CSS Source : START -->
+    <link rel="stylesheet" href="../vendors/datatables.net-bs5/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="../vendors/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../vendors/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="../vendors/tiny-slider/tiny-slider.css">
+    <link rel="stylesheet" href="../vendors/quill/quill.snow.css">
+    <link rel="stylesheet" href="../vendors/filepond/filepond.min.css">
+    <link rel="stylesheet" href="../vendors/filepond-plugin-image-preview/filepond-plugin-image-preview.min.css">
+    <link rel="stylesheet" href="../css/style.min.css">
+    <!--  CSS Source : END -->
+
+    <!-- Google Font : START -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Font : END -->
+
+    <!--  Website Title : START -->
+    <title>Client - Nortale PMP | Project Management Professional</title>
+    <!--  Website Title : END -->
+
+    <!--  Canonial : START -->
+    <link rel="canonical" href="https://nortale-pmp-demo.netlify.app/admin/client.html" />
+    <!--  Canonial : END -->
+</head>
+
+<body class="dashboard-layout">
+    <div class="loading-page">
+        <div class="loading-page-inner">
+            <div class="logo-wrapper">
+                <img class="logo-inline" src="../media/svg/logo.svg" alt="logo.svg">
+                <span>PMP</span>
+            </div>
+            <p>Let's start manage your project!</p>
+            <div class="dot-wrapper">
+                <div class="dots bg-purple dot1"> </div>
+                <div class="dots bg-purple dot2"></div>
+                <div class="dots bg-purple dot3"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Sidebar : START -->
+    <div class="overlay"></div>
+    <aside>
+        <a href="/" class="logo">
+            <img class="logo-inline" src="../media/svg/logo.svg" alt="logo.svg">
+            <img class="logo-single" src="../media/svg/logo-single.svg" alt="logo.svg">
+        </a>
+        <ul class="menu-list">
+
+
+
+            <li class="menu-list-item dashboard">
+                <a href="dashboard.html">
+                    <iconify-icon icon="uil-layers"></iconify-icon>
+                    <p>Dashboard</p>
+                </a>
+            </li>
+            <li class="menu-list-item client">
+                <a href="client.html">
+                    <iconify-icon icon="la:user-tie"></iconify-icon>
+                    <p>Client</p>
+                </a>
+            </li>
+            <li class="menu-list-item team">
+                <a href="team.html">
+                    <iconify-icon icon="uil-users-alt"></iconify-icon>
+                    <p>Team</p>
+                </a>
+            </li>
+            <li class="menu-list-item task">
+                <a href="task.html">
+                    <iconify-icon icon="uil-file-alt"></iconify-icon>
+                    <p>Task</p>
+                </a>
+            </li>
+            <li class="menu-list-item user">
+                <a href="user.html">
+                    <iconify-icon icon="uil-user-check"></iconify-icon>
+                    <p>User</p>
+                </a>
+            </li>
+
+        </ul>
+        <h6 class="title-menu">account</h6>
+        <ul class="menu-list gap-help">
+            <li class="menu-list-item profile">
+                <a href="profile.html">
+                    <iconify-icon icon="uil-user"></iconify-icon>
+                    <p>Profile</p>
+                </a>
+            </li>
+            <li class="menu-list-item logout">
+                <a href="logout.html">
+                    <iconify-icon icon="uil-power"></iconify-icon>
+                    <p>Logout</p>
+                </a>
+            </li>
+        </ul>
+        <div class="avatar d-md-none">
+            <img class="avatar-img" src="../media/images/avatar.png" alt="avatar.png">
+            <div>
+                <div class="avatar-title">Marsha</div>
+                <div class="avatar-desc">marsha@nortale.com</div>
+            </div>
+        </div>
+        <div class="d-flex d-md-none need-support mb-4">
+            <a href="#" class="btn btn-purple">Need Support</a>
+        </div>
+        <div class="help">
+            <a href="#">
+                <span class="icon-bagde">
+                <iconify-icon icon="uil-comments"></iconify-icon>
+            </span>
+            </a>
+            <div class="help-inner">
+                <h6>Need Help?</h6>
+                <p>Our team is always ready to help you</p>
+                <a href="#" class="btn btn-purple w-100">Contact now!</a>
+            </div>
+        </div>
+    </aside>
+    <!-- Sidebar : END -->
+    <main class="flex-fill">
+        <!-- Navbar : START -->
+        <nav class="navbar">
+            <a href="/" class="logo d-md-none">
+                <img class="logo-inline" src="../media/svg/logo.svg" alt="logo.png">
+            </a>
+            <div class="d-flex align-items-center gap-2 title-weather">
+
+
+
+                <h1 class="title">Client</h1>
+
+            </div>
+            <div class="navbar-item-wrapper">
+                <div class="navbar-item search" data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <iconify-icon icon="uil:search"></iconify-icon>
+                </div>
+                <div class="navbar-item question-marks">
+                    <iconify-icon icon="uil:question"></iconify-icon>
+                    <label id="hamburger-menu" role="button" class="collapsed" aria-expanded="false">
+                        <div class="hamburger hamburger-container">
+                            <span class="hamburger hamburger-purple"></span>
+                            <span class="hamburger hamburger-purple"></span>
+                            <span class="hamburger hamburger-purple"></span>
+                            <span class="hamburger hamburger-purple"></span>
+                        </div>
+                    </label>
+                </div>
+                <div class="navbar-item bell d-flex d-sm-none">
+                    <a href="team-profile.html" class="d-flex">
+                        <iconify-icon class="dot-notification" icon="fa6-regular:bell"></iconify-icon>
+                    </a>
+                </div>
+                <div class="navbar-item bell d-none d-sm-flex">
+                    <div class="dropdown dropdown-notification">
+                        <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-notification" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="action-notification">
+                        <iconify-icon class="dot-notification" icon="fa6-regular:bell"></iconify-icon>
+                    </span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-notification">
+                            <li>
+                                <a class="dropdown-item new" href="#">
+                                    <span class="time">30s</span>
+                                    <span class="notification"></span>
+                                    <div class="avatar">
+                                        <div class="avatar-letter bg-blue">L</div>
+                                        <div>
+                                            <div class="avatar-title">Mortgage Lender</div>
+                                            <div class="avatar-desc">Ely Changed Status to finish</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <span class="time">12h</span>
+                                    <span class="notification"></span>
+                                    <div class="avatar">
+                                        <div class="avatar-letter bg-fuchia">P</div>
+                                        <div>
+                                            <div class="avatar-title">Quote of the day...</div>
+                                            <div class="avatar-desc">Edited by Michael</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <span class="time">24h</span>
+                                    <span class="notification"></span>
+                                    <div class="avatar">
+                                        <div class="avatar-letter bg-emerald">N</div>
+                                        <div>
+                                            <div class="avatar-title">Noreao</div>
+                                            <div class="avatar-desc">Edited by Bijan</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <span class="show-more">Show more</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-item avatar">
+                    <img src="../media/images/avatar.png" alt="avatar.png">
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar : END -->
+
+        <!-- Search Modal : START -->
+        <div class="modal fade modal-search" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xxl">
+                <div class="modal-content">
+                    <form action="" class="search-input">
+                        <iconify-icon class="search" icon="uil:search"></iconify-icon>
+                        <input type="text" class="form-control" placeholder="Type Here ...">
+                        <button type="reset" class="btn">
+                            <iconify-icon class="clear" icon="ci:close-small"></iconify-icon>
+                            <span>Clear</span>
+                        </button>
+                    </form>
+                    <nav class="modal-tabs">
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-client-tab" data-bs-toggle="tab" data-bs-target="#nav-client" type="button" role="tab" aria-controls="nav-client" aria-selected="true">Client</button>
+                            <button class="nav-link" id="nav-team-tab" data-bs-toggle="tab" data-bs-target="#nav-team" type="button" role="tab" aria-controls="nav-team" aria-selected="false">Team</button>
+                            <button class="nav-link" id="nav-task-tab" data-bs-toggle="tab" data-bs-target="#nav-task" type="button" role="tab" aria-controls="nav-task" aria-selected="false">Task</button>
+                            <button class="nav-link" id="nav-user-tab" data-bs-toggle="tab" data-bs-target="#nav-user" type="button" role="tab" aria-controls="nav-user" aria-selected="false">User</button>
+
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-client" role="tabpanel" aria-labelledby="nav-client-tab" tabindex="0">
+                            <!-- Client Table (Desktop Only) : START -->
+                            <table id="clientModal" class="table hover d-none d-lg-table">
+                                <thead>
+                                    <tr>
+                                        <th>Business</th>
+                                        <th>Client</th>
+                                        <th>Email</th>
+                                        <th class="text-center">Members</th>
+                                        <th>Created</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="avatar">
+                                                <div class="avatar-letter bg-amber">C</div>
+                                                <div class="avatar-text">Clearedge Lending</div>
+                                            </div>
+                                        </td>
+                                        <td>Michael Guerreio</td>
+                                        <td>mguerreio@clearedgelending.com</td>
+                                        <td class="text-center">5</td>
+                                        <td>2022-08-29</td>
+                                        <td>
+                                            <div class="dropdown d-inline-block">
+                                                <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="action">
+                                                <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                                            </span>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="avatar">
+                                                <div class="avatar-letter bg-blue">S</div>
+                                                <div class="avatar-text">SGCP</div>
+                                            </div>
+                                        </td>
+                                        <td>Bijan Borhan</td>
+                                        <td>bijanborhan@sgcp.com</td>
+                                        <td class="text-center">3</td>
+                                        <td>2022-08-27</td>
+                                        <td>
+                                            <div class="dropdown d-inline-block">
+                                                <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="action">
+                                                <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                                            </span>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="avatar">
+                                                <div class="avatar-letter bg-red">L</div>
+                                                <div class="avatar-text">LCRC</div>
+                                            </div>
+                                        </td>
+                                        <td>Ely O'Fall</td>
+                                        <td>elyfall@lcrc.com</td>
+                                        <td class="text-center">4</td>
+                                        <td>2022-08-24</td>
+                                        <td>
+                                            <div class="dropdown d-inline-block">
+                                                <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="action">
+                                                <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                                            </span>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="avatar">
+                                                <div class="avatar-letter bg-emerald">N</div>
+                                                <div class="avatar-text">Noreao</div>
+                                            </div>
+                                        </td>
+                                        <td>Bijan Borhan</td>
+                                        <td>bijanborhan@sgcp.com</td>
+                                        <td class="text-center">3</td>
+                                        <td>2022-08-21</td>
+                                        <td>
+                                            <div class="dropdown d-inline-block">
+                                                <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="action">
+                                                <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                                            </span>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="avatar">
+                                                <div class="avatar-letter bg-fuchia">P</div>
+                                                <div class="avatar-text">Pinkhamlaw</div>
+                                            </div>
+                                        </td>
+                                        <td>Ely O'Fall</td>
+                                        <td>elyfall@pinkhamlaw.com</td>
+                                        <td class="text-center">4</td>
+                                        <td>2022-08-19</td>
+                                        <td>
+                                            <div class="dropdown d-inline-block">
+                                                <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="action">
+                                                <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                                            </span>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- Client Table (Desktop Only) : END -->
+
+                            <!-- Client Card (Tablet & Phone) : START -->
+                            <div class="row g-3 d-lg-none">
+                                <div class="col-6 col-md-4" data-date="1">
+                                    <div class="card-client bordered">
+                                        <div class="card-client-division">
+                                            <div class="card-client-icon bg-amber">
+                                                <span>C</span>
+                                            </div>
+                                            <div class="card-client-content">
+                                                <h6>Clearedge Lending</h6>
+                                                <p>5 Member</p>
+                                                <div class="dropdown">
+                                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-client-detail envelop">
+                                            <p>Michael Guerreio</p>
+                                            <span class="d-none email-copy-text">mguerreio@clearedgelending.com</span>
+                                            <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                                <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4" data-date="2">
+                                    <div class="card-client bordered">
+                                        <div class="card-client-division">
+                                            <div class="card-client-icon bg-blue">
+                                                <span>S</span>
+                                            </div>
+                                            <div class="card-client-content">
+                                                <h6>SGCP</h6>
+                                                <p>3 Member</p>
+                                                <div class="dropdown">
+                                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-client-detail envelop">
+                                            <p>Bijan Borhan</p>
+                                            <span class="d-none email-copy-text">bijanborhan@sgcp.com</span>
+                                            <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                                <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4" data-date="3">
+                                    <div class="card-client bordered">
+                                        <div class="card-client-division">
+                                            <div class="card-client-icon bg-red">
+                                                <span>L</span>
+                                            </div>
+                                            <div class="card-client-content">
+                                                <h6>LCRC</h6>
+                                                <p>4 Member</p>
+                                                <div class="dropdown">
+                                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-client-detail envelop">
+                                            <p>Ely O'Fall</p>
+                                            <span class="d-none email-copy-text">elyfall@lcrc.com</span>
+                                            <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                                <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4" data-date="4">
+                                    <div class="card-client bordered">
+                                        <div class="card-client-division">
+                                            <div class="card-client-icon bg-emerald">
+                                                <span>N</span>
+                                            </div>
+                                            <div class="card-client-content">
+                                                <h6>Noreao</h6>
+                                                <p>3 Member</p>
+                                                <div class="dropdown">
+                                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-client-detail envelop">
+                                            <p>Bijan Borhan</p>
+                                            <span class="d-none email-copy-text">bijanborhan@noreao.com</span>
+                                            <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                                <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4" data-date="5">
+                                    <div class="card-client bordered">
+                                        <div class="card-client-division">
+                                            <div class="card-client-icon bg-fuchia">
+                                                <span>P</span>
+                                            </div>
+                                            <div class="card-client-content">
+                                                <h6>Pinkhamlaw</h6>
+                                                <p>4 Member</p>
+                                                <div class="dropdown">
+                                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-client-detail envelop">
+                                            <p>Ely O'Fall</p>
+                                            <span class="d-none email-copy-text">elyfa@pinkhamlaw.com</span>
+                                            <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                                <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4" data-date="6">
+                                    <div class="card-client bordered">
+                                        <div class="card-client-division">
+                                            <div class="card-client-icon bg-amber">
+                                                <span>C</span>
+                                            </div>
+                                            <div class="card-client-content">
+                                                <h6>Clearedge Lending</h6>
+                                                <p>5 Member</p>
+                                                <div class="dropdown">
+                                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-client-detail envelop">
+                                            <p>Michael Guerreio</p>
+                                            <span class="d-none email-copy-text">mguerreio@clearedgelending.com</span>
+                                            <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                                <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4" data-date="7">
+                                    <div class="card-client bordered">
+                                        <div class="card-client-division">
+                                            <div class="card-client-icon bg-blue">
+                                                <span>S</span>
+                                            </div>
+                                            <div class="card-client-content">
+                                                <h6>SGCP</h6>
+                                                <p>3 Member</p>
+                                                <div class="dropdown">
+                                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-client-detail envelop">
+                                            <p>Bijan Borhan</p>
+                                            <span class="d-none email-copy-text">bijanborhan@sgcp.com</span>
+                                            <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                                <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4" data-date="8">
+                                    <div class="card-client bordered">
+                                        <div class="card-client-division">
+                                            <div class="card-client-icon bg-red">
+                                                <span>L</span>
+                                            </div>
+                                            <div class="card-client-content">
+                                                <h6>LCRC</h6>
+                                                <p>2 Member</p>
+                                                <div class="dropdown">
+                                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-client-detail envelop">
+                                            <p>Ely O'Fall</p>
+                                            <span class="d-none email-copy-text">elyfa@lcrc.com</span>
+                                            <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                                <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4" data-date="9">
+                                    <div class="card-client bordered">
+                                        <div class="card-client-division">
+                                            <div class="card-client-icon bg-emerald">
+                                                <span>N</span>
+                                            </div>
+                                            <div class="card-client-content">
+                                                <h6>Noreao</h6>
+                                                <p>6 Member</p>
+                                                <div class="dropdown">
+                                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-client-detail envelop">
+                                            <p>Bijan Borhan</p>
+                                            <span class="d-none email-copy-text">bijanborhan@noreao.com</span>
+                                            <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                                <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4" data-date="10">
+                                    <div class="card-client bordered">
+                                        <div class="card-client-division">
+                                            <div class="card-client-icon bg-fuchia">
+                                                <span>P</span>
+                                            </div>
+                                            <div class="card-client-content">
+                                                <h6>Pinkhamlaw</h6>
+                                                <p>3 Member</p>
+                                                <div class="dropdown">
+                                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-client-detail envelop">
+                                            <p>Ely O'Fall</p>
+                                            <span class="d-none email-copy-text">elyfa@pinkhamlaw.com</span>
+                                            <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                                <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4" data-date="11">
+                                    <div class="card-client bordered">
+                                        <div class="card-client-division">
+                                            <div class="card-client-icon bg-amber">
+                                                <span>C</span>
+                                            </div>
+                                            <div class="card-client-content">
+                                                <h6>Clearedge Lending</h6>
+                                                <p>2 Member</p>
+                                                <div class="dropdown">
+                                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-client-detail envelop">
+                                            <p>Michael Guerreio</p>
+                                            <span class="d-none email-copy-text">mguerreio@clearedgelending.com</span>
+                                            <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                                <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4" data-date="12">
+                                    <div class="card-client bordered">
+                                        <div class="card-client-division">
+                                            <div class="card-client-icon bg-blue">
+                                                <span>S</span>
+                                            </div>
+                                            <div class="card-client-content">
+                                                <h6>SGCP</h6>
+                                                <p>5 Member</p>
+                                                <div class="dropdown">
+                                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-client-detail envelop">
+                                            <p>Bijan Borhan</p>
+                                            <span class="d-none email-copy-text">bijanborhan@sgcp.com</span>
+                                            <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                                <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Client Card (Tablet & Phone) : END -->
+                        </div>
+                        <div class="tab-pane fade" id="nav-team" role="tabpanel" aria-labelledby="nav-team-tab" tabindex="0">
+                            <div class="row g-3">
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="card-team bordered">
+                                        <div class="card-team-division">
+                                            <div class="card-team-icon bg-fuchia">
+                                                <span>M</span>
+                                            </div>
+                                            <div class="card-team-content">
+                                                <h6>Marketing</h6>
+                                                <p>Bijan Borhan</p>
+                                                <div class="dropdown">
+                                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="action">
+                                                    <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                                                </span>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="team-profile.html">Member</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-team-tasks">
+                                            <ul class="avatar-group">
+                                                <li class="avatar-group-item">
+                                                    <img class="avatar-group-image" src="../media/images/thumbnail-avatar-1.png" alt="thumbnail-avatar-1.png">
+                                                </li>
+                                                <li class="avatar-group-item">
+                                                    <img class="avatar-group-image" src="../media/images/thumbnail-avatar-2.png" alt="thumbnail-avatar-2.png">
+                                                </li>
+                                                <li class="avatar-group-item">
+                                                    <img class="avatar-group-image" src="../media/images/thumbnail-avatar-3.png" alt="thumbnail-avatar-3.png">
+                                                </li>
+                                                <li class="avatar-group-item">
+                                                    <span class="avatar-group-image">2+</span>
+                                                </li>
+                                            </ul>
+                                            <div class="total-task">
+                                                <iconify-icon icon="uil:file-export"></iconify-icon>
+                                                <p><strong>16</strong> tasks</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="card-team bordered">
+                                        <div class="card-team-division">
+                                            <div class="card-team-icon bg-emerald">
+                                                <span>B</span>
+                                            </div>
+                                            <div class="card-team-content">
+                                                <h6>Back-End Dev</h6>
+                                                <p>Toto Prayogo</p>
+                                                <div class="dropdown">
+                                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="action">
+                                                    <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                                                </span>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="team-profile.html">Member</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-team-tasks">
+                                            <ul class="avatar-group">
+                                                <li class="avatar-group-item">
+                                                    <img class="avatar-group-image" src="../media/images/thumbnail-avatar-1.png" alt="thumbnail-avatar-1.png">
+                                                </li>
+                                                <li class="avatar-group-item">
+                                                    <img class="avatar-group-image" src="../media/images/thumbnail-avatar-2.png" alt="thumbnail-avatar-2.png">
+                                                </li>
+                                                <li class="avatar-group-item">
+                                                    <img class="avatar-group-image" src="../media/images/thumbnail-avatar-3.png" alt="thumbnail-avatar-3.png">
+                                                </li>
+                                                <li class="avatar-group-item">
+                                                    <span class="avatar-group-image">2+</span>
+                                                </li>
+                                            </ul>
+                                            <div class="total-task">
+                                                <iconify-icon icon="uil:file-export"></iconify-icon>
+                                                <p><strong>2</strong> tasks</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="card-team bordered">
+                                        <div class="card-team-division">
+                                            <div class="card-team-icon bg-amber">
+                                                <span>F</span>
+                                            </div>
+                                            <div class="card-team-content">
+                                                <h6>Front-End Dev</h6>
+                                                <p>Dzaki Fahd</p>
+                                                <div class="dropdown">
+                                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="action">
+                                                    <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                                                </span>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="team-profile.html">Member</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-team-tasks">
+                                            <ul class="avatar-group">
+                                                <li class="avatar-group-item">
+                                                    <img class="avatar-group-image" src="../media/images/thumbnail-avatar-1.png" alt="thumbnail-avatar-1.png">
+                                                </li>
+                                                <li class="avatar-group-item">
+                                                    <img class="avatar-group-image" src="../media/images/thumbnail-avatar-2.png" alt="thumbnail-avatar-2.png">
+                                                </li>
+                                                <li class="avatar-group-item">
+                                                    <img class="avatar-group-image" src="../media/images/thumbnail-avatar-3.png" alt="thumbnail-avatar-3.png">
+                                                </li>
+                                                <li class="avatar-group-item">
+                                                    <span class="avatar-group-image">2+</span>
+                                                </li>
+                                            </ul>
+                                            <div class="total-task">
+                                                <iconify-icon icon="uil:file-export"></iconify-icon>
+                                                <p><strong>4</strong> tasks</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="card-team bordered">
+                                        <div class="card-team-division">
+                                            <div class="card-team-icon bg-blue">
+                                                <span>C</span>
+                                            </div>
+                                            <div class="card-team-content">
+                                                <h6>Creative</h6>
+                                                <p>Emmi Umasita</p>
+                                                <div class="dropdown">
+                                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="action">
+                                                    <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                                                </span>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="team-profile.html">Member</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-team-tasks">
+                                            <ul class="avatar-group">
+                                                <li class="avatar-group-item">
+                                                    <img class="avatar-group-image" src="../media/images/thumbnail-avatar-1.png" alt="thumbnail-avatar-1.png">
+                                                </li>
+                                                <li class="avatar-group-item">
+                                                    <img class="avatar-group-image" src="../media/images/thumbnail-avatar-2.png" alt="thumbnail-avatar-2.png">
+                                                </li>
+                                                <li class="avatar-group-item">
+                                                    <img class="avatar-group-image" src="../media/images/thumbnail-avatar-3.png" alt="thumbnail-avatar-3.png">
+                                                </li>
+                                                <li class="avatar-group-item">
+                                                    <span class="avatar-group-image">2+</span>
+                                                </li>
+                                            </ul>
+                                            <div class="total-task">
+                                                <iconify-icon icon="uil:file-export"></iconify-icon>
+                                                <p><strong>20</strong> tasks</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="card-team bordered">
+                                        <div class="card-team-division">
+                                            <div class="card-team-icon bg-red">
+                                                <span>C</span>
+                                            </div>
+                                            <div class="card-team-content">
+                                                <h6>Content Writer</h6>
+                                                <p>Sarah Connor</p>
+                                                <div class="dropdown">
+                                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="action">
+                                                    <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                                                </span>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="team-profile.html">Member</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-team-tasks">
+                                            <ul class="avatar-group">
+                                                <li class="avatar-group-item">
+                                                    <img class="avatar-group-image" src="../media/images/thumbnail-avatar-1.png" alt="thumbnail-avatar-1.png">
+                                                </li>
+                                                <li class="avatar-group-item">
+                                                    <img class="avatar-group-image" src="../media/images/thumbnail-avatar-2.png" alt="thumbnail-avatar-2.png">
+                                                </li>
+                                                <li class="avatar-group-item">
+                                                    <img class="avatar-group-image" src="../media/images/thumbnail-avatar-3.png" alt="thumbnail-avatar-3.png">
+                                                </li>
+                                                <li class="avatar-group-item">
+                                                    <span class="avatar-group-image">2+</span>
+                                                </li>
+                                            </ul>
+                                            <div class="total-task">
+                                                <iconify-icon icon="uil:file-export"></iconify-icon>
+                                                <p><strong>6</strong> tasks</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-task" role="tabpanel" aria-labelledby="nav-task-tab" tabindex="0">
+                            <!-- Task Table (Desktop Only) : START -->
+                            <table id="taskModal" class="table hover d-none d-lg-table">
+                                <thead>
+                                    <tr>
+                                        <th>Business</th>
+                                        <th>Admin</th>
+                                        <th>Created</th>
+                                        <th>Title</th>
+                                        <th>Type</th>
+                                        <th>Status</th>
+                                        <th>Priority</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="avatar">
+                                                <div class="avatar-letter bg-blue">S</div>
+                                                <div class="avatar-text">SGCP</div>
+                                            </div>
+                                        </td>
+                                        <td>Ely O'Fall</td>
+                                        <td>Aug 11</td>
+                                        <td>Mortgage Lender</td>
+                                        <td>Flyer</td>
+                                        <td>
+                                            <div class="table-status">
+                                                <iconify-icon class="text-emerald" icon="uil:arrow-circle-right"></iconify-icon>
+                                                Progress
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-rounded low">Low</span>
+                                        </td>
+                                        <td>
+                                            <div class="dropdown d-inline-block">
+                                                <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="action">
+                                                <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                                            </span>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="task-info.html">Detail</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="avatar">
+                                                <div class="avatar-letter bg-fuchia">P</div>
+                                                <div class="avatar-text">Pinkhamlaw</div>
+                                            </div>
+                                        </td>
+                                        <td>Michael</td>
+                                        <td>Jul 12</td>
+                                        <td>SM Post</td>
+                                        <td>Flyer</td>
+                                        <td>
+                                            <div class="table-status">
+                                                <iconify-icon class="text-blue" icon="uil:arrow-circle-down"></iconify-icon>
+                                                Received
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-rounded high">High</span>
+                                        </td>
+                                        <td>
+                                            <div class="dropdown d-inline-block">
+                                                <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="action">
+                                                <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                                            </span>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="task-info.html">Detail</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="avatar">
+                                                <div class="avatar-letter bg-red">L</div>
+                                                <div class="avatar-text">LCRC</div>
+                                            </div>
+                                        </td>
+                                        <td>Bijan Borhan</td>
+                                        <td>Jul 10</td>
+                                        <td>Re-design Web</td>
+                                        <td>UI Design</td>
+                                        <td>
+                                            <div class="table-status">
+                                                <iconify-icon class="text-red" icon="uil:minus-circle"></iconify-icon>
+                                                Waiting
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-rounded medium">Medium</span>
+                                        </td>
+                                        <td>
+                                            <div class="dropdown d-inline-block">
+                                                <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="action">
+                                                <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                                            </span>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="task-info.html">Detail</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- Task Table (Desktop Only) : END -->
+
+
+
+                            <!-- Task Card (Tablet) : START -->
+                            <div class="d-none d-md-block d-lg-none">
+                                <div class="row g-3">
+                                    <div class="col-6 col-md-4" data-date="2">
+                                        <div class="card-task">
+                                            <div class="card-task-division">
+                                                <div class="card-task-icon bg-blue">
+                                                    <span>S</span>
+                                                </div>
+                                                <div class="card-task-content">
+                                                    <h6>SGCP</h6>
+                                                    <p>Acasisme</p>
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                                        </a>
+                                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                            <li><a class="dropdown-item" href="#">Detail</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-task-detail">
+                                                <p>Mortgage Loan Event 72</p>
+                                                <div class="status">
+                                                    <span class="date">06/02/22</span>
+                                                    <span class="progress">Progress</span>
+                                                    <span class="indicator bg-emerald"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4" data-date="3">
+                                        <div class="card-task">
+                                            <div class="card-task-division">
+                                                <div class="card-task-icon bg-fuchia">
+                                                    <span>P</span>
+                                                </div>
+                                                <div class="card-task-content">
+                                                    <h6>Pinkhamlaw</h6>
+                                                    <p>Acasisme</p>
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                                        </a>
+                                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                            <li><a class="dropdown-item" href="#">Detail</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-task-detail">
+                                                <p>SM Post</p>
+                                                <div class="status">
+                                                    <span class="date">06/03/22</span>
+                                                    <span class="progress">Received</span>
+                                                    <span class="indicator bg-blue"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4" data-date="1">
+                                        <div class="card-task">
+                                            <div class="card-task-division">
+                                                <div class="card-task-icon bg-amber">
+                                                    <span>C</span>
+                                                </div>
+                                                <div class="card-task-content">
+                                                    <h6>Clearedge Lending</h6>
+                                                    <p>Bijan Borhan</p>
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                                        </a>
+                                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                            <li><a class="dropdown-item" href="#">Detail</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-task-detail">
+                                                <p>Mortgage Lender</p>
+                                                <div class="status">
+                                                    <span class="date">06/03/21</span>
+                                                    <span class="progress">Waiting</span>
+                                                    <span class="indicator bg-red"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4" data-date="4">
+                                        <div class="card-task">
+                                            <div class="card-task-division">
+                                                <div class="card-task-icon bg-red">
+                                                    <span>M</span>
+                                                </div>
+                                                <div class="card-task-content">
+                                                    <h6>Marketing</h6>
+                                                    <p>Bijan Borhan</p>
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                                        </a>
+                                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                            <li><a class="dropdown-item" href="#">Detail</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-task-detail">
+                                                <p>Re-design Web</p>
+                                                <div class="status">
+                                                    <span class="date">06/04/22</span>
+                                                    <span class="progress">Progress</span>
+                                                    <span class="indicator bg-emerald"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Task Card (Tablet) : END -->
+
+                            <!-- Task Card (Mobile) : START -->
+                            <div class="d-block d-md-none">
+                                <div class="row g-3 g-3">
+                                    <div class="col-sm-6 col-md-4" data-date="2">
+                                        <div class="card-task bordered">
+                                            <div class="card-task-division">
+                                                <div class="card-task-icon bg-blue">
+                                                    <span>S</span>
+                                                </div>
+                                                <div class="card-task-content">
+                                                    <p>SGCP</p>
+                                                    <h6>Mortgage Loan Event 72</h6>
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                                        </a>
+                                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                            <li><a class="dropdown-item" href="#">Detail</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-task-detail">
+                                                <p></p>
+                                                <div class="status">
+                                                    <span class="date">Acasisme</span>
+                                                    <span class="date">06/02/22</span>
+                                                    <span class="progress">Progress</span>
+                                                    <span class="indicator bg-emerald"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4" data-date="3">
+                                        <div class="card-task bordered">
+                                            <div class="card-task-division">
+                                                <div class="card-task-icon bg-fuchia">
+                                                    <span>P</span>
+                                                </div>
+                                                <div class="card-task-content">
+                                                    <p>Pinkhamlaw</p>
+                                                    <h6>SM Post</h6>
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                                        </a>
+                                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                            <li><a class="dropdown-item" href="#">Detail</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-task-detail">
+                                                <p></p>
+                                                <div class="status">
+                                                    <span class="date">Acasisme</span>
+                                                    <span class="date">06/03/22</span>
+                                                    <span class="progress">Received</span>
+                                                    <span class="indicator bg-blue"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4" data-date="1">
+                                        <div class="card-task bordered">
+                                            <div class="card-task-division">
+                                                <div class="card-task-icon bg-amber">
+                                                    <span>C</span>
+                                                </div>
+                                                <div class="card-task-content">
+                                                    <p>Clearedge Lending</p>
+                                                    <h6>Mortgage Lender</h6>
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                                        </a>
+                                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                            <li><a class="dropdown-item" href="#">Detail</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-task-detail">
+                                                <p></p>
+                                                <div class="status">
+                                                    <span class="date">Bijan Borhan</span>
+                                                    <span class="date">06/03/21</span>
+                                                    <span class="progress">Waiting</span>
+                                                    <span class="indicator bg-red"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4" data-date="4">
+                                        <div class="card-task bordered">
+                                            <div class="card-task-division">
+                                                <div class="card-task-icon bg-red">
+                                                    <span>M</span>
+                                                </div>
+                                                <div class="card-task-content">
+                                                    <p>Marketing</p>
+                                                    <h6>Re-design Web</h6>
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                                        </a>
+                                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                            <li><a class="dropdown-item" href="#">Detail</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-task-detail">
+                                                <p></p>
+                                                <div class="status">
+                                                    <span class="date">Bijan Borhan</span>
+                                                    <span class="date">06/04/22</span>
+                                                    <span class="progress">Progress</span>
+                                                    <span class="indicator bg-emerald"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Task Card (Mobile) : END -->
+
+                        </div>
+                        <div class="tab-pane fade" id="nav-user" role="tabpanel" aria-labelledby="nav-user-tab" tabindex="0">
+                            <div class="row g-3">
+                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card card-user bordered">
+                                        <div class="envelop-icon" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                            <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                        </div>
+                                        <div class="ellipsis-icon">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <iconify-icon icon="uil:ellipsis-v"></iconify-icon>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#">Detail</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <span class="delete-icon" data-bs-toggle="modal" data-bs-target="#deleteUserModal">
+                                    <iconify-icon icon="uil:trash-alt"></iconify-icon>
+                                </span>
+                                        <div class="card-user-avatar">
+                                            <div class="avatar-wrapper">
+                                                <img src="../media/images/image-1.png" alt="image-1.png">
+                                                <span>
+                                            <iconify-icon class="text-emerald" icon="akar-icons:circle-check-fill">
+                                            </iconify-icon>
+                                        </span>
+                                            </div>
+                                        </div>
+                                        <div class="card-user-content">
+                                            <h6>Ely O'Fall</h6>
+                                            <p class="email-copy-text">elyfa@clearedgelending.com</p>
+                                            <span class="badge badge-rounded admin">Admin</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card card-user bordered">
+                                        <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                            <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                        </div>
+                                        <div class="ellipsis-icon">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <iconify-icon icon="uil:ellipsis-v"></iconify-icon>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#">Detail</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <span class="delete-icon" data-bs-toggle="modal" data-bs-target="#deleteUserModal">
+                                    <iconify-icon icon="uil:trash-alt"></iconify-icon>
+                                </span>
+                                        <div class="card-user-avatar">
+                                            <div class="avatar-wrapper">
+                                                <img src="../media/images/image-2.png" alt="image-2.png">
+                                                <span>
+                                            <iconify-icon class="text-amber" icon="ep:warning-filled">
+                                            </iconify-icon>
+                                        </span>
+                                            </div>
+                                        </div>
+                                        <div class="card-user-content">
+                                            <h6>Bijan Borhan</h6>
+                                            <p class="email-copy-text">bijan@clearedgelending.com</p>
+                                            <span class="badge badge-rounded member">Member</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card card-user bordered">
+                                        <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                            <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                        </div>
+                                        <div class="ellipsis-icon">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <iconify-icon icon="uil:ellipsis-v"></iconify-icon>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#">Detail</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <span class="delete-icon" data-bs-toggle="modal" data-bs-target="#deleteUserModal">
+                                    <iconify-icon icon="uil:trash-alt"></iconify-icon>
+                                </span>
+                                        <div class="card-user-avatar">
+                                            <div class="avatar-wrapper">
+                                                <img src="../media/images/image-3.png" alt="image-3.png">
+                                                <span>
+                                            <iconify-icon class="text-emerald" icon="akar-icons:circle-check-fill">
+                                            </iconify-icon>
+                                        </span>
+                                            </div>
+                                        </div>
+                                        <div class="card-user-content">
+                                            <h6>Emmi Umasita</h6>
+                                            <p class="email-copy-text">emmi@clearedgelending.com</p>
+                                            <span class="badge badge-rounded member">Member</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card card-user bordered">
+                                        <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                            <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                        </div>
+                                        <div class="ellipsis-icon">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <iconify-icon icon="uil:ellipsis-v"></iconify-icon>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#">Detail</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <span class="delete-icon" data-bs-toggle="modal" data-bs-target="#deleteUserModal">
+                                    <iconify-icon icon="uil:trash-alt"></iconify-icon>
+                                </span>
+                                        <div class="card-user-avatar">
+                                            <div class="avatar-wrapper">
+                                                <img src="../media/images/image-4.png" alt="image-4.png">
+                                                <span>
+                                            <iconify-icon class="text-emerald" icon="akar-icons:circle-check-fill">
+                                            </iconify-icon>
+                                        </span>
+                                            </div>
+                                        </div>
+                                        <div class="card-user-content">
+                                            <h6>Rokhayakebe</h6>
+                                            <p class="email-copy-text">rokh@clearedgelending.com</p>
+                                            <span class="badge badge-rounded member">Member</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card card-user bordered">
+                                        <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                            <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                        </div>
+                                        <div class="ellipsis-icon">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <iconify-icon icon="uil:ellipsis-v"></iconify-icon>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#">Detail</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <span class="delete-icon" data-bs-toggle="modal" data-bs-target="#deleteUserModal">
+                                    <iconify-icon icon="uil:trash-alt"></iconify-icon>
+                                </span>
+                                        <div class="card-user-avatar">
+                                            <div class="avatar-wrapper">
+                                                <img src="../media/images/image-4.png" alt="image-4.png">
+                                                <span>
+                                            <iconify-icon class="text-emerald" icon="akar-icons:circle-check-fill">
+                                            </iconify-icon>
+                                        </span>
+                                            </div>
+                                        </div>
+                                        <div class="card-user-content">
+                                            <h6>Rokhayakebe</h6>
+                                            <p class="email-copy-text">rokh@clearedgelending.com</p>
+                                            <span class="badge badge-rounded member">Member</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card card-user bordered">
+                                        <div class="envelop-icon" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                            <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                        </div>
+                                        <div class="ellipsis-icon">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <iconify-icon icon="uil:ellipsis-v"></iconify-icon>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#">Detail</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <span class="delete-icon" data-bs-toggle="modal" data-bs-target="#deleteUserModal">
+                                    <iconify-icon icon="uil:trash-alt"></iconify-icon>
+                                </span>
+                                        <div class="card-user-avatar">
+                                            <div class="avatar-wrapper">
+                                                <img src="../media/images/image-1.png" alt="image-1.png">
+                                                <span>
+                                            <iconify-icon class="text-emerald" icon="akar-icons:circle-check-fill">
+                                            </iconify-icon>
+                                        </span>
+                                            </div>
+                                        </div>
+                                        <div class="card-user-content">
+                                            <h6>Ely O'Fall</h6>
+                                            <p class="email-copy-text">elyfa@clearedgelending.com</p>
+                                            <span class="badge badge-rounded admin">Admin</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card card-user bordered">
+                                        <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                            <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                        </div>
+                                        <div class="ellipsis-icon">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <iconify-icon icon="uil:ellipsis-v"></iconify-icon>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#">Detail</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <span class="delete-icon" data-bs-toggle="modal" data-bs-target="#deleteUserModal">
+                                    <iconify-icon icon="uil:trash-alt"></iconify-icon>
+                                </span>
+                                        <div class="card-user-avatar">
+                                            <div class="avatar-wrapper">
+                                                <img src="../media/images/image-2.png" alt="image-2.png">
+                                                <span>
+                                            <iconify-icon class="text-amber" icon="ep:warning-filled">
+                                            </iconify-icon>
+                                        </span>
+                                            </div>
+                                        </div>
+                                        <div class="card-user-content">
+                                            <h6>Bijan Borhan</h6>
+                                            <p class="email-copy-text">bijan@clearedgelending.com</p>
+                                            <span class="badge badge-rounded member">Member</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card card-user bordered">
+                                        <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                            <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                        </div>
+                                        <div class="ellipsis-icon">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <iconify-icon icon="uil:ellipsis-v"></iconify-icon>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#">Detail</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <span class="delete-icon" data-bs-toggle="modal" data-bs-target="#deleteUserModal">
+                                    <iconify-icon icon="uil:trash-alt"></iconify-icon>
+                                </span>
+                                        <div class="card-user-avatar">
+                                            <div class="avatar-wrapper">
+                                                <img src="../media/images/image-3.png" alt="image-3.png">
+                                                <span>
+                                            <iconify-icon class="text-emerald" icon="akar-icons:circle-check-fill">
+                                            </iconify-icon>
+                                        </span>
+                                            </div>
+                                        </div>
+                                        <div class="card-user-content">
+                                            <h6>Emmi Umasita</h6>
+                                            <p class="email-copy-text">emmi@clearedgelending.com</p>
+                                            <span class="badge badge-rounded member">Member</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-search-footer">
+                        <button type="button" class="btn btn-md btn-purple-solid" data-bs-dismiss="modal" aria-label="Close">Close
+                            Search</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Search Modal : END -->
+
+        <!-- Main Content : START -->
+        <div class="main-content">
+            <!-- Alert Success : START -->
+            <div class="alert alert-emerald alert-dismissible fade show" role="alert">
+                Congratulations, your profile has been added!
+                <a href="#" class="alert-close" data-bs-dismiss="alert" aria-label="Close">
+                    <iconify-icon icon="ci:close-small"></iconify-icon>
+                </a>
+            </div>
+            <!-- Alert Success : END -->
+
+            <!-- New Client : START -->
+            <section class="content-item">
+                <div class="title-content align-items-start align-items-sm-center flex-column flex-sm-row">
+                    <h2 class="small d-none d-sm-block">Add more member to tracking your project</h2>
+                    <div class="title-content-action wide">
+                        <div class="sort-data">
+                            <span>Short By:</span>
+                            <select id="sort-filter-select" class="form-select" aria-label="Sort filter select option">
+                                <option value="desc">Newest</option>
+                                <option value="asc">Oldest</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn btn-purple-solid btn-sm" data-bs-toggle="modal" data-bs-target="#addNewClientModal">
+                            <iconify-icon icon="akar-icons:circle-plus-fill"></iconify-icon>
+                            <span>Add new client</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Client Card (Tablet and Phone) : START -->
+                <div id="client-card-list" class="d-block d-lg-none gap-content">
+                    <div class="row g-3 list">
+                        <div class="col-6 col-md-4" data-date="1">
+                            <div class="card-client">
+                                <div class="card-client-division">
+                                    <div class="card-client-icon bg-amber">
+                                        <span>C</span>
+                                    </div>
+                                    <div class="card-client-content">
+                                        <h6>Clearedge Lending</h6>
+                                        <p>5 Member</p>
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-client-detail envelop">
+                                    <p>Michael Guerreio</p>
+                                    <span class="d-none email-copy-text">mguerreio@clearedgelending.com</span>
+                                    <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                        <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4" data-date="2">
+                            <div class="card-client">
+                                <div class="card-client-division">
+                                    <div class="card-client-icon bg-blue">
+                                        <span>S</span>
+                                    </div>
+                                    <div class="card-client-content">
+                                        <h6>SGCP</h6>
+                                        <p>3 Member</p>
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-client-detail envelop">
+                                    <p>Bijan Borhan</p>
+                                    <span class="d-none email-copy-text">bijanborhan@sgcp.com</span>
+                                    <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                        <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4" data-date="3">
+                            <div class="card-client">
+                                <div class="card-client-division">
+                                    <div class="card-client-icon bg-red">
+                                        <span>L</span>
+                                    </div>
+                                    <div class="card-client-content">
+                                        <h6>LCRC</h6>
+                                        <p>4 Member</p>
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-client-detail envelop">
+                                    <p>Ely O'Fall</p>
+                                    <span class="d-none email-copy-text">elyfall@lcrc.com</span>
+                                    <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                        <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4" data-date="4">
+                            <div class="card-client">
+                                <div class="card-client-division">
+                                    <div class="card-client-icon bg-emerald">
+                                        <span>N</span>
+                                    </div>
+                                    <div class="card-client-content">
+                                        <h6>Noreao</h6>
+                                        <p>3 Member</p>
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-client-detail envelop">
+                                    <p>Bijan Borhan</p>
+                                    <span class="d-none email-copy-text">bijanborhan@noreao.com</span>
+                                    <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                        <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4" data-date="5">
+                            <div class="card-client">
+                                <div class="card-client-division">
+                                    <div class="card-client-icon bg-fuchia">
+                                        <span>P</span>
+                                    </div>
+                                    <div class="card-client-content">
+                                        <h6>Pinkhamlaw</h6>
+                                        <p>4 Member</p>
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-client-detail envelop">
+                                    <p>Ely O'Fall</p>
+                                    <span class="d-none email-copy-text">elyfa@pinkhamlaw.com</span>
+                                    <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                        <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4" data-date="6">
+                            <div class="card-client">
+                                <div class="card-client-division">
+                                    <div class="card-client-icon bg-amber">
+                                        <span>C</span>
+                                    </div>
+                                    <div class="card-client-content">
+                                        <h6>Clearedge Lending</h6>
+                                        <p>5 Member</p>
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-client-detail envelop">
+                                    <p>Michael Guerreio</p>
+                                    <span class="d-none email-copy-text">mguerreio@clearedgelending.com</span>
+                                    <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                        <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4" data-date="7">
+                            <div class="card-client">
+                                <div class="card-client-division">
+                                    <div class="card-client-icon bg-blue">
+                                        <span>S</span>
+                                    </div>
+                                    <div class="card-client-content">
+                                        <h6>SGCP</h6>
+                                        <p>3 Member</p>
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-client-detail envelop">
+                                    <p>Bijan Borhan</p>
+                                    <span class="d-none email-copy-text">bijanborhan@sgcp.com</span>
+                                    <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                        <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4" data-date="8">
+                            <div class="card-client">
+                                <div class="card-client-division">
+                                    <div class="card-client-icon bg-red">
+                                        <span>L</span>
+                                    </div>
+                                    <div class="card-client-content">
+                                        <h6>LCRC</h6>
+                                        <p>2 Member</p>
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-client-detail envelop">
+                                    <p>Ely O'Fall</p>
+                                    <span class="d-none email-copy-text">elyfa@lcrc.com</span>
+                                    <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                        <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4" data-date="9">
+                            <div class="card-client">
+                                <div class="card-client-division">
+                                    <div class="card-client-icon bg-emerald">
+                                        <span>N</span>
+                                    </div>
+                                    <div class="card-client-content">
+                                        <h6>Noreao</h6>
+                                        <p>6 Member</p>
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-client-detail envelop">
+                                    <p>Bijan Borhan</p>
+                                    <span class="d-none email-copy-text">bijanborhan@noreao.com</span>
+                                    <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                        <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4" data-date="10">
+                            <div class="card-client">
+                                <div class="card-client-division">
+                                    <div class="card-client-icon bg-fuchia">
+                                        <span>P</span>
+                                    </div>
+                                    <div class="card-client-content">
+                                        <h6>Pinkhamlaw</h6>
+                                        <p>3 Member</p>
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-client-detail envelop">
+                                    <p>Ely O'Fall</p>
+                                    <span class="d-none email-copy-text">elyfa@pinkhamlaw.com</span>
+                                    <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                        <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4" data-date="11">
+                            <div class="card-client">
+                                <div class="card-client-division">
+                                    <div class="card-client-icon bg-amber">
+                                        <span>C</span>
+                                    </div>
+                                    <div class="card-client-content">
+                                        <h6>Clearedge Lending</h6>
+                                        <p>2 Member</p>
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-client-detail envelop">
+                                    <p>Michael Guerreio</p>
+                                    <span class="d-none email-copy-text">mguerreio@clearedgelending.com</span>
+                                    <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                        <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4" data-date="12">
+                            <div class="card-client">
+                                <div class="card-client-division">
+                                    <div class="card-client-icon bg-blue">
+                                        <span>S</span>
+                                    </div>
+                                    <div class="card-client-content">
+                                        <h6>SGCP</h6>
+                                        <p>5 Member</p>
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="action">
+                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                        </span>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-client-detail envelop">
+                                    <p>Bijan Borhan</p>
+                                    <span class="d-none email-copy-text">bijanborhan@sgcp.com</span>
+                                    <div class="envelop-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Email copied">
+                                        <iconify-icon icon="uil:envelope-alt"></iconify-icon>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Client Card (Tablet and Phone) : END -->
+
+                <!-- Client Table (Desktop Only) : START -->
+                <table id="clients" class="table hover d-none d-lg-table">
+                    <thead>
+                        <tr>
+                            <th>Business</th>
+                            <th>Client</th>
+                            <th>Email</th>
+                            <th class="text-center">Members</th>
+                            <th>Created</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <div class="avatar-letter bg-amber">C</div>
+                                    <div class="avatar-text">Clearedge Lending</div>
+                                </div>
+                            </td>
+                            <td>Michael Guerreio</td>
+                            <td>mguerreio@clearedgelending.com</td>
+                            <td class="text-center">5</td>
+                            <td>2022-08-29</td>
+                            <td>
+                                <div class="dropdown d-inline-block">
+                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="action">
+                                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                                        </span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <div class="avatar-letter bg-blue">S</div>
+                                    <div class="avatar-text">SGCP</div>
+                                </div>
+                            </td>
+                            <td>Bijan Borhan</td>
+                            <td>bijanborhan@sgcp.com</td>
+                            <td class="text-center">3</td>
+                            <td>2022-08-27</td>
+                            <td>
+                                <div class="dropdown d-inline-block">
+                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="action">
+                                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                                        </span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <div class="avatar-letter bg-red">L</div>
+                                    <div class="avatar-text">LCRC</div>
+                                </div>
+                            </td>
+                            <td>Ely O'Fall</td>
+                            <td>elyfall@lcrc.com</td>
+                            <td class="text-center">4</td>
+                            <td>2022-08-24</td>
+                            <td>
+                                <div class="dropdown d-inline-block">
+                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="action">
+                                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                                        </span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <div class="avatar-letter bg-emerald">N</div>
+                                    <div class="avatar-text">Noreao</div>
+                                </div>
+                            </td>
+                            <td>Bijan Borhan</td>
+                            <td>bijanborhan@sgcp.com</td>
+                            <td class="text-center">3</td>
+                            <td>2022-08-21</td>
+                            <td>
+                                <div class="dropdown d-inline-block">
+                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="action">
+                                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                                        </span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <div class="avatar-letter bg-fuchia">P</div>
+                                    <div class="avatar-text">Pinkhamlaw</div>
+                                </div>
+                            </td>
+                            <td>Ely O'Fall</td>
+                            <td>elyfall@pinkhamlaw.com</td>
+                            <td class="text-center">4</td>
+                            <td>2022-08-19</td>
+                            <td>
+                                <div class="dropdown d-inline-block">
+                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="action">
+                                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                                        </span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <div class="avatar-letter bg-amber">C</div>
+                                    <div class="avatar-text">Clearedge Lending</div>
+                                </div>
+                            </td>
+                            <td>Michael Guerreio</td>
+                            <td>mguerreio@clearedgelending.com</td>
+                            <td class="text-center">5</td>
+                            <td>2022-08-18</td>
+                            <td>
+                                <div class="dropdown d-inline-block">
+                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="action">
+                                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                                        </span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <div class="avatar-letter bg-blue">S</div>
+                                    <div class="avatar-text">SGCP</div>
+                                </div>
+                            </td>
+                            <td>Bijan Borhan</td>
+                            <td>bijanborhan@sgcp.com</td>
+                            <td class="text-center">3</td>
+                            <td>2022-08-16</td>
+                            <td>
+                                <div class="dropdown d-inline-block">
+                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="action">
+                                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                                        </span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <div class="avatar-letter bg-red">L</div>
+                                    <div class="avatar-text">LCRC</div>
+                                </div>
+                            </td>
+                            <td>Ely O'Fall</td>
+                            <td>elyfall@lcrc.com</td>
+                            <td class="text-center">4</td>
+                            <td>2022-08-14</td>
+                            <td>
+                                <div class="dropdown d-inline-block">
+                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="action">
+                                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                                        </span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <div class="avatar-letter bg-emerald">N</div>
+                                    <div class="avatar-text">Noreao</div>
+                                </div>
+                            </td>
+                            <td>Bijan Borhan</td>
+                            <td>bijanborhan@sgcp.com</td>
+                            <td class="text-center">3</td>
+                            <td>2022-08-12</td>
+                            <td>
+                                <div class="dropdown d-inline-block">
+                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="action">
+                                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                                        </span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <div class="avatar-letter bg-fuchia">P</div>
+                                    <div class="avatar-text">Pinkhamlaw</div>
+                                </div>
+                            </td>
+                            <td>Ely O'Fall</td>
+                            <td>elyfall@pinkhamlaw.com</td>
+                            <td class="text-center">4</td>
+                            <td>2022-08-11</td>
+                            <td>
+                                <div class="dropdown d-inline-block">
+                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="action">
+                                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                                        </span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <div class="avatar-letter bg-emerald">N</div>
+                                    <div class="avatar-text">Noreao</div>
+                                </div>
+                            </td>
+                            <td>Bijan Borhan</td>
+                            <td>bijanborhan@sgcp.com</td>
+                            <td class="text-center">3</td>
+                            <td>2022-08-07</td>
+                            <td>
+                                <div class="dropdown d-inline-block">
+                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="action">
+                                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                                        </span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <div class="avatar-letter bg-fuchia">P</div>
+                                    <div class="avatar-text">Pinkhamlaw</div>
+                                </div>
+                            </td>
+                            <td>Ely O'Fall</td>
+                            <td>elyfall@pinkhamlaw.com</td>
+                            <td class="text-center">4</td>
+                            <td>2022-01-03</td>
+                            <td>
+                                <div class="dropdown d-inline-block">
+                                    <a class="dropdown-toggle remove-arrow" href="#" role="button" id="dropdown-action" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="action">
+                                            <iconify-icon icon="uil:ellipsis-h"></iconify-icon>
+                                        </span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-action">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="client-profile.html">Member</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- Client Table (Desktop Only) : END -->
+            </section>
+            <!-- New Client : END -->
+        </div>
+        <!-- Main Content : END -->
+    </main>
+
+    <!-- Add New Client Modal : START -->
+    <div class="modal modal-add fade" id="addNewClientModal" tabindex="-1" aria-labelledby="addNewTeamModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <span class="close-modal" data-bs-dismiss="modal" aria-label="Close">
+                    <iconify-icon icon="ci:close-small"></iconify-icon>
+                </span>
+                <h6 class="modal-title">Add Profile</h6>
+                <div id="particle-area">
+                    <div class="modal-upload-file client-profile-avatar">
+                        <label for="team-profile-upload" class="upload-file-icon">
+                            <iconify-icon icon="heroicons-solid:camera"></iconify-icon>
+                        </label>
+                        <input type="file" accept="image/jpeg, image/png, image/jpg" name="file" id="team-profile-upload" class="inputfile-custom">
+                    </div>
+                </div>
+                <p class="file-infomation">Max size <span>1MB</span></p>
+                <div class="form-material-wrapper form-add-profile">
+                    <form action="" method="post">
+                        <div class="row g-3 g-md-4">
+                            <div class="col-md-12">
+                                <div class="form-material">
+                                    <input type="text" autocomplete="off" id="business-name" required class="form-material-input">
+                                    <label class="form-material-label" for="business-name">Business Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-material">
+                                    <input type="text" autocomplete="off" id="first-name" required class="form-material-input">
+                                    <label class="form-material-label" for="first-name">First Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-material">
+                                    <input type="text" autocomplete="off" id="last-name" required class="form-material-input">
+                                    <label class="form-material-label" for="last-name">Last Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-material">
+                                    <input type="text" autocomplete="off" id="email-address" required class="form-material-input">
+                                    <label class="form-material-label" for="email-address">Email Address</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="d-flex justify-content-end gap-3">
+                                    <button type="button" class="btn btn-md btn-transparent" data-bs-dismiss="modal" aria-label="Close">Not Now</button>
+                                    <button type="submit" class="btn btn-md btn-purple-solid">Create Client</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add New Client Modal : END -->
+
+    <script src="../vendors/jquery/jquery.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendors/datatables.net/jquery.dataTables.min.js"></script>
+    <script src="../vendors/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../vendors/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+    <script src="../vendors/dayjs/dayjs.min.js"></script>
+    <script src="../vendors/list.js/list.min.js"></script>
+    <script>
+        window.NortaleConfig = {
+            baseUrl: 'https://nortale-pmp-demo.netlify.app/',
+            mediaPath: 'media/svg/'
+        }
+    </script>
+    <script src="../vendors/sparticles/sparticles.min.js"></script>
+    <script src="../js/script.min.js"></script>
+    <script>
+        // document.querySelector(".joiads").click()
+
+        $(document).ready(function() {
+            var clients = $('#clients').DataTable({
+                columnDefs: [{
+                        orderable: false,
+                        targets: 5
+                    },
+                    {
+                        targets: 4,
+                        render: function(data, type, row) {
+                            return type === 'sort' ? data : dayjs(data).format("MMM DD");
+                        }
+                    }
+                ],
+                order: [4, 'desc'],
+                language: {
+                    paginate: {
+                        previous: `<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M13.1717 14L17.3017 9.86998C17.519 9.65139 17.641 9.3557 17.641 9.04748C17.641 8.73926 17.519 8.44357 17.3017 8.22498C17.1932 8.11563 17.0642 8.02884 16.922 7.96961C16.7799 7.91038 16.6274 7.87988 16.4734 7.87988C16.3194 7.87988 16.1669 7.91038 16.0247 7.96961C15.8825 8.02884 15.7535 8.11563 15.645 8.22498L10.6984 13.1716C10.589 13.2801 10.5022 13.4091 10.443 13.5513C10.3838 13.6935 10.3533 13.846 10.3533 14C10.3533 14.154 10.3838 14.3065 10.443 14.4487C10.5022 14.5908 10.589 14.7199 10.6984 14.8283L15.645 19.8333C15.754 19.9414 15.8833 20.027 16.0255 20.085C16.1676 20.1431 16.3198 20.1725 16.4734 20.1716C16.6269 20.1725 16.7791 20.1431 16.9213 20.085C17.0634 20.027 17.1927 19.9414 17.3017 19.8333C17.519 19.6147 17.641 19.319 17.641 19.0108C17.641 18.7026 17.519 18.4069 17.3017 18.1883L13.1717 14Z" fill="#809FB8"/> </svg>`,
+                        next: `<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M14.8283 14L10.6983 9.86998C10.481 9.65139 10.359 9.3557 10.359 9.04748C10.359 8.73926 10.481 8.44357 10.6983 8.22498C10.8068 8.11563 10.9358 8.02884 11.078 7.96961C11.2201 7.91038 11.3726 7.87988 11.5266 7.87988C11.6806 7.87988 11.8331 7.91038 11.9753 7.96961C12.1175 8.02884 12.2465 8.11563 12.355 8.22498L17.3016 13.1716C17.411 13.2801 17.4978 13.4091 17.557 13.5513C17.6162 13.6935 17.6467 13.846 17.6467 14C17.6467 14.154 17.6162 14.3065 17.557 14.4487C17.4978 14.5908 17.411 14.7199 17.3016 14.8283L12.355 19.8333C12.246 19.9414 12.1167 20.027 11.9745 20.085C11.8324 20.1431 11.6802 20.1725 11.5266 20.1716C11.3731 20.1725 11.2209 20.1431 11.0787 20.085C10.9366 20.027 10.8073 19.9414 10.6983 19.8333C10.481 19.6147 10.359 19.319 10.359 19.0108C10.359 18.7026 10.481 18.4069 10.6983 18.1883L14.8283 14Z" fill="#809FB8"/> </svg>`,
+                    }
+                },
+                dom: 't<"d-none d-lg-flex flex-column flex-sm-row justify-content-between align-items-center mt-0 mt-sm-3"<"d-none d-sm-block"i>p>'
+            });
+
+            var info = clients.page.info();
+            $('#clients_info').html(
+                `Showing <span class="text-black">${info.end}</span> items out of <span class="text-black">${info.recordsTotal}</span> results found.`
+            );
+
+            $('#clients').on('order.dt', function() {
+                $('#clients_info').html(
+                    `Showing <span class="text-black">${info.end}</span> items out of <span class="text-black">${info.recordsTotal}</span> results found.`
+                );
+            });
+
+            $('#clients').on('page.dt', function() {
+                setTimeout(() => {
+                    var info = clients.page.info();
+                    $('#clients_info').html(
+                        `Showing <span class="text-black">${info.end - info.start}</span> items out of <span class="text-black">${info.recordsTotal}</span> results found.`
+                    );
+                }, 0);
+            });
+
+            $("#sort-filter-select").on("change", function() {
+                clients.order([4, this.value]).draw();
+                $('#clients_info').html(
+                    `Showing <span class="text-black">${info.end}</span> items out of <span class="text-black">${info.recordsTotal}</span> results found.`
+                );
+            });
+        });
+
+        const teamProfileUpload = document.querySelector("#team-profile-upload");
+        teamProfileUpload.addEventListener("change", function() {
+            const reader = new FileReader();
+            reader.addEventListener("load", () => {
+                const uploaded_image = reader.result;
+                document.querySelector(".modal-upload-file").style.backgroundImage = `url(${uploaded_image})`;
+            });
+            reader.readAsDataURL(this.files[0]);
+        });
+    </script>
+    <script>
+        const options = {
+            valueNames: [{
+                data: ['date']
+            }]
+        };
+
+        const clientCardList = new List('client-card-list', options);
+
+        clientCardList.sort('date', {
+            order: 'desc'
+        })
+
+        document.getElementById("sort-filter-select").addEventListener("change", (item) => {
+            clientCardList.sort('date', {
+                order: item.target.value
+            })
+
+        })
+
+        window.onload = function() {
+            let particleArea = document.getElementById("particle-area");
+            const options = {
+                composition: "source-over",
+                count: 30,
+                speed: 3,
+                direction: 0,
+                color: ["#30D9A2", "#DC60EF", "#F9B959", "#EA3A3D", "#209DFF"],
+            }
+            let mySparticles = new Sparticles(particleArea, options, 220, 140);
+        }
+    </script>
+</body>
+
+</html>
